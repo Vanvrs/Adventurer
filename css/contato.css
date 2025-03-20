@@ -1,6 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
- */
-
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +24,6 @@
     font-weight: 300;
     background-color: #f5b810;
     border-radius: 3px;
-    
     transition: all 0.3s ease-in-out;
 }
 .nav__btn:hover {
@@ -134,7 +130,7 @@ input.form-text:focus, textarea.form-text:focus {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 0.8rem;
-    width: 65%;
+    width: 50%;
     border-radius: 5;
     cursor: pointer; /*Adiciona um cursor de ponteiro ao botão*/
 }
@@ -200,145 +196,7 @@ form {
         color: #666;
         border-radius: 50%;
 }
-/* Responsividade com media query */
 
-@media (min-width: 768px){
-    
-    #menu__icon{
-        display: none;
-    }
-    ul{
-        display: flex;
-    }
-    ul{
-        gap: 30px;
-    }
-    header{
-        justify-content: space-around;
-        height: 4rem;
-        width: 100%;
-    }
-    header h1{
-        font-size: 1.5rem;
-        margin-left: 20px;
-    }
-    nav ul li a{
-        color: black;
-        text-decoration: none;
-        list-style: none;    
-    }
-    nav ul{
-        margin-right: 30px;
-    }
-
-    /* Principal e Formulário */
-    .principal__content h1{
-        margin-top: 30px;
-        font-size: 2rem;
-    }
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    .entradas__container {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        gap: 10px;
-    }
-    .entradas__form {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .entradas__form input{
-        padding: 9px;
-    }
-    #campo__msg {
-        border-radius: 5px;
-        width: 300px;
-        height: 120px;
-        resize: none;
-    }
-    .submit__btn {
-        padding: 12px 20px;
-        background-color: #FFC107;
-        border: none;
-        cursor: pointer;
-        width: 515px;
-       
-    }
-    .submit__btn:hover {
-        background-color: #f09102;
-    
-    }
-
-    /* Footer */
-    .footer {
-        background-color: #fff;
-        height: auto;
-        color: black;
-        font-family: Arial, sans-serif;
-    }
-    .footer__container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: 0 auto;
-        height: 230px;
-    }
-    .footer__section {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-    .footer__section h3 {
-        text-align: center;
-        font-size: 1.1rem;
-        color: #444;
-    }
-    .footer__section ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        padding: 0;
-        text-align: center;
-    }
-    .footer__section ul li a {
-        color: #666;
-        flex-direction: column;
-        text-decoration: none;
-        font-size: .9rem;
-        font-weight: 300;
-    }
-    .footer__section ul li a:hover {
-        text-decoration: underline;
-    }
-
-    /* Redes e mídias */
-    .redes__container {
-        text-align: center;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .midias__sociais {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-bottom: 5px;
-    }
-    .icon__ms {
-        color: black;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    
-    
-}
 /* Responsividade e media query */
 @media (min-width: 1200px){
     .footer {
@@ -426,4 +284,146 @@ form {
     .icon__ms:hover {
         color: #000;
     }
+}
+
+/* Minimo do tamanho da tela */
+
+@media (min-width: 768px){
+    
+    #menu__icon{
+        display: none;
+    }
+    ul{
+        display: flex;
+    }
+    ul{
+        gap: 30px;
+    }
+    header{
+        justify-content: space-around;
+        height: 4rem;
+        width: 100%;
+    }
+    header h1{
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+    nav ul li a{
+        color: black;
+        text-decoration: none;
+        list-style: none;    
+    }
+    nav ul{
+        margin-right: 30px;
+    }
+
+    /* Principal e Formulário */
+    .principal__content h1{
+        margin-top: 30px;
+        font-size: 2rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .entradas__container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .entradas__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .entradas__form input{
+        padding: 9px;
+    }
+    #campo__msg {
+        border-radius: 5px;
+        width: 300px;
+        height: 120px;
+        resize: none;
+    }
+    .submit__btn {
+        padding: 12px 20px;
+        background-color: #FFC107;
+        border: none;
+        cursor: pointer;
+        width: 490px;
+  
+        
+       
+    }
+    .submit__btn:hover {
+        background-color: #f09102;
+    
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #fff;
+        height: auto;
+        color: black;
+        font-family: Arial, sans-serif;
+    }
+    .footer__container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        height: 230px;
+    }
+    .footer__section {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__section h3 {
+        text-align: center;
+        font-size: 1.1rem;
+        color: #444;
+    }
+    .footer__section ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+    .footer__section ul li a {
+        color: #666;
+        flex-direction: column;
+        text-decoration: none;
+        font-size: .9rem;
+        font-weight: 300;
+    }
+    .footer__section ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Redes e mídias */
+    .redes__container {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .midias__sociais {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 5px;
+    }
+    .icon__ms {
+        color: black;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    
 }
