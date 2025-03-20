@@ -1,0 +1,429 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+/* Inicio */
+.init{
+    background-color: #f9ce89;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100dvh;
+}
+/* Botão iniciar com tansição */
+.nav__btn{
+    margin-right: 20px;
+    padding: 10px;
+    color: black;
+    font-weight: 300;
+    background-color: #f5b810;
+    border-radius: 3px;
+    
+    transition: all 0.3s ease-in-out;
+}
+.nav__btn:hover {
+    background-color: #f09102;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    background-color: #f8ce77;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+header h1{
+    font-weight: 500;
+    color: #333;
+}
+
+nav, header h1{
+    margin: 0 10px 0 10px;
+}
+
+#menu__icon{
+    font-size: 1.5rem;
+}
+
+ul, .nav__btn{
+    display:  none;
+}
+
+nav ul li {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+nav ul li a{
+        padding: 5px;
+    }
+    
+nav ul li a:hover{
+        background-color: #f5b810;
+}
+
+/* Principal */
+
+.principal{
+    width: 100%;
+    height: 70dvh;
+}
+
+.principal__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal__content h1{
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+/* Inputs */
+ input.form-text, textarea.form-text {
+    width: 100%;
+    padding: 10px 15px; /*Aumente o padding para afastar o texto do placeholder*/
+    border-radius: 5px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: none;
+    font-family: inherit;
+}
+/* Estilo do placeholder */
+input.form-text::placeholder, textarea.form-text::placeholder {
+    color: #999; 
+    opacity: 1; 
+}
+
+input.form-text:focus, textarea.form-text:focus {
+    border-color: #f09102;
+    outline: none;
+    box-shadow: 0 0 5px #f09102;
+}
+
+#campo__msg {
+    height: 150px;
+    border: none;
+    resize: vertical; 
+}
+
+/* Botão submit e transição */
+.submit__btn {
+    border: none;
+    color: #333;
+    background-color: #ffc72c;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    width: 65%;
+    border-radius: 5;
+    cursor: pointer; /*Adiciona um cursor de ponteiro ao botão*/
+}
+.submit__btn:hover {
+    background-color: #f09102;
+
+}
+.entradas__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.entradas__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+/* Footer */
+.footer__section{
+        display: none;
+}
+    
+.footer {
+        position: absolute;
+        bottom: 0;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+}
+/* Redes e Midias */
+.redes__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+}
+.redes__container p{
+        margin-top: 10px;
+        font-weight: 300;
+        color: #666;
+        font-size: .7rem;
+        margin-bottom: 10px;
+}  
+.midias__sociais{
+        display: flex;
+        gap: 16px;
+}  
+.midias__sociais ion-icon{
+        padding: 10px;
+        border:1px solid #999;
+        color: #666;
+        border-radius: 50%;
+}
+/* Responsividade com media query */
+
+@media (min-width: 768px){
+    
+    #menu__icon{
+        display: none;
+    }
+    ul{
+        display: flex;
+    }
+    ul{
+        gap: 30px;
+    }
+    header{
+        justify-content: space-around;
+        height: 4rem;
+        width: 100%;
+    }
+    header h1{
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+    nav ul li a{
+        color: black;
+        text-decoration: none;
+        list-style: none;    
+    }
+    nav ul{
+        margin-right: 30px;
+    }
+
+    /* Principal e Formulário */
+    .principal__content h1{
+        margin-top: 30px;
+        font-size: 2rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .entradas__container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .entradas__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .entradas__form input{
+        padding: 9px;
+    }
+    #campo__msg {
+        border-radius: 5px;
+        width: 300px;
+        height: 120px;
+        resize: none;
+    }
+    .submit__btn {
+        padding: 12px 20px;
+        background-color: #FFC107;
+        border: none;
+        cursor: pointer;
+        width: 515px;
+       
+    }
+    .submit__btn:hover {
+        background-color: #f09102;
+    
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #fff;
+        height: auto;
+        color: black;
+        font-family: Arial, sans-serif;
+    }
+    .footer__container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        height: 230px;
+    }
+    .footer__section {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__section h3 {
+        text-align: center;
+        font-size: 1.1rem;
+        color: #444;
+    }
+    .footer__section ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+    .footer__section ul li a {
+        color: #666;
+        flex-direction: column;
+        text-decoration: none;
+        font-size: .9rem;
+        font-weight: 300;
+    }
+    .footer__section ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Redes e mídias */
+    .redes__container {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .midias__sociais {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 5px;
+    }
+    .icon__ms {
+        color: black;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    
+}
+/* Responsividade e media query */
+@media (min-width: 1200px){
+    .footer {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        color: black;
+        font-family: Arial, sans-serif;
+    }
+    .nav__btn{
+        display: flex;
+    }
+    .nav__btn:hover {
+        background-color: #f09102;
+    
+    }
+    header{
+        height: 5rem;
+    }
+    .principal__content h1{
+        margin-top: 0;
+    }
+    /* Footer */
+    .footer__container {
+        margin-left: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center; 
+    }
+    .footer__section {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    .footer__section h3 {
+        margin-bottom: 15px;
+        text-align: left; 
+        font-size: 1.2rem;
+        color: #444;
+    }
+    .footer__section ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        text-align: left;
+    }
+    .footer__section ul li a {
+        color: #666;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    .footer__section ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    /* Redes e mídias */
+    .redes__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        width: 300px;
+    }
+    .redes__container p {
+        font-size: 14px;
+        margin: 0;
+        color: #666;
+    }
+    .midias__sociais {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+    .icon__ms {
+        color: #666;
+        font-size: 24px;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+    .icon__ms:hover {
+        color: #000;
+    }
+}
