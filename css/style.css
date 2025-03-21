@@ -84,10 +84,17 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
 }
+.principal__content{
+    width: 100%;
+    padding: 20px;
+}
 
 .init-img{
     margin-top: 10px;
     width: 280px;
+}
+.home-img{
+    width: 300px;
 }
 
 .text-strong{
@@ -107,6 +114,7 @@ nav ul li a:hover{
     font-weight: 300;
     color: #333;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .form-box{
@@ -340,6 +348,7 @@ main label input::placeholder {
 .terceiro__container img{
     filter: grayscale(100%);
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .alvo__img{
@@ -454,7 +463,7 @@ main label input::placeholder {
 
     .principal img{
         margin-top: 50px;
-        width: 500px;
+        width: 200px;
     }
 
     .principal__content h1{
@@ -793,10 +802,7 @@ main label input::placeholder {
         justify-content: center;
         align-items: center;
         height: 100dvh;
-        
-        
-        
-        
+
     }
 
     .aventura__text{
