@@ -200,6 +200,7 @@ main label input::placeholder {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    
    
 }
 
@@ -757,7 +758,7 @@ main label input::placeholder {
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        width: 98%;
+        width: 96%;
         margin-left: 2%;
         height: 300px
     }
@@ -778,6 +779,9 @@ main label input::placeholder {
 
     .aventura h1{
         font-size: 2rem;
+        position: relative;
+        top: 1rem;
+        
     }
     
     .aventura p{
@@ -790,12 +794,17 @@ main label input::placeholder {
         align-items: center;
         height: 100dvh;
         
+        
+        
+        
     }
 
     .aventura__text{
         margin-top: -3rem;
         display: flex;
         flex-direction: column;
+       
+        
     }
 
     .aventura .img-box{
@@ -856,7 +865,7 @@ main label input::placeholder {
 
     .terceiro__text{
         width: 800px;
-        margin-left: 8rem;
+        margin-left: 4rem;
         display: flex;
         flex-direction: column;
     }
